@@ -3,6 +3,6 @@
 <h2>Pokemons</h2>
 <ul class="pokemons">
   <li *ngFor="let pokemon of pokemons">
-    <span class="badge"></span> {{pokemon.name}}
+    <span class="badge"></span> {{pokemon.name}}, une graine de type {{pokemon.type}}, qui mesure {{pokemon.weight | currency:'mètres':'symbol'}} et pèse {{pokemon.height| currency:'KG':'symbol'}}.
   </li>
 </ul>
