@@ -1,1 +1,8 @@
 <p>pokemons works!</p>
+
+<h2>Pokemons</h2>
+<ul class="pokemons">
+  <li *ngFor="let pokemon of pokemons">
+    <span class="badge"></span> {{pokemon.name}}
+  </li>
+</ul>
