@@ -1,1 +1,8 @@
 <p>generations works!</p>
+
+<h2>Générations</h2>
+<ul class="generations">
+  <li *ngFor="let generation of generations">
+    <span class="badge">{{generation.id}}</span> {{generation.name}}
+  </li>
+</ul>
