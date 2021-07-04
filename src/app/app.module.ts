@@ -7,6 +7,7 @@ import { GenerationsComponent } from './composants/generations/generations.compo
 import { PokemonsComponent } from './composants/pokemons/pokemons.component';
 import {registerLocaleData} from "@angular/common";
 import localeFR from '@angular/common/locales/fr';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 registerLocaleData(localeFR);
 
@@ -18,7 +19,8 @@ registerLocaleData(localeFR);
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [{provide: LOCALE_ID, useValue: 'fr'}],
   bootstrap: [AppComponent]

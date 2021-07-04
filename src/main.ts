@@ -1,4 +1,4 @@
-import { enableProdMode } from '@angular/core';
+import {enableProdMode, NgModule} from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { AppModule } from './app/app.module';
@@ -10,3 +10,11 @@ if (environment.production) {
 
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
+
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
+@NgModule({
+  imports: [NgbModule],
+})
+export class YourAppModule {
+}

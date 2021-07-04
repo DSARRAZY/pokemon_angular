@@ -1,8 +1,20 @@
-<p>pokemons works!</p>
 
-<h2>Pokemons</h2>
-<ul class="pokemons">
-  <li *ngFor="let pokemon of pokemons">
-    <span class="badge"></span> {{pokemon.name}}, une graine de type {{pokemon.type}}, qui mesure {{pokemon.weight | currency:'mètres':'symbol'}} et pèse {{pokemon.height| currency:'KG':'symbol'}}.
-  </li>
-</ul>
+<h1 class='center'>Pokémons</h1>
+
+<div class='container'>
+    <div class="row">
+
+      <div class="w-25 p-3" *ngFor='let pokemon of pokemons' >
+        <div class="card" style="width: 18rem;">
+          <img src="{{pokemon.picture}}" style="width:30%; height:auto" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{ pokemon.name }}</h5>
+            <p class="card-text">Catégorie: {{ pokemon.type}}</p>
+            <p class="card-text">Taille: {{pokemon.height | currency:'mètres':'symbol'}}</p>
+            <p class="card-text">Poids: {{pokemon.weight | currency:'KG':'symbol'}}</p>
+          </div>
+        </div>
+      </div>
+
+  </div>
+</div>
